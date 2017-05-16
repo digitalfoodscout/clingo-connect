@@ -1,0 +1,21 @@
+{
+  "name": "clingo-connect",
+  "version": "1.0.0",
+  "description": "Wrapper for clingo",
+  "main": "clingo-connect.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitalfoodscout/clingo-connect.git"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec -b --recursive",
+    "coverage": "NODE_ENV=test ./node_modules/istanbul/lib/cli.js cover -x \"**/config/**\" ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000 --recursive"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.1",
+    "should": "^11.2.1",
+    "author": "Daniel Sendzik"
+  }
+}
